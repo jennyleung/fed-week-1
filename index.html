@@ -1,0 +1,72 @@
+<!DOCTYPE html>  <!-- this is going to follow all the conventions of an HTML document. New browsers will be okay, but old browsers might not be -->
+
+<html lang="en"> <!-- the content of this page is in this language. HTML will only have 2 children, head and body -->
+	<head> <!-- how the email gets to where it's going, not the content of the email. tells browser how to render the page -->
+		<meta charset="UTF-8"> <!-- meta is where facebook finds details of the page. This only sets charater set to utf-8 how does your computer know that pressing 8 would map to the number 8. this tells the computer which character set you're using. 99.9% of the time it's UTF-8. like alt+j --> 
+		<title>McFly Family Values </title>
+        <style>
+            html, 
+            body {
+                font-size: 24px;
+                line-height: 1.5;
+                font-family: Georgia, "Times New Roman", serif; 
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+            	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            	line-height: 1.1;
+            }
+
+            h1 {
+            	font-size: 3em;
+            	border-bottom: 5px solid black ;
+            }
+
+            .post {
+            	width: 60%;
+            	margin-left: auto;
+            	margin-right: auto;
+
+            }
+        </style>
+        
+        <!-- because CSS isn't content, we'll put it in the head section. it'll work anywhere, but probably best here you have to put quotes around fonts that have spaces. 
+
+        If you want to change the font size, you have to change the line height too. the value of line height doesn't have any units, it's the multiple of the font size
+
+        If you don't set the line height for h1, it'll inherit the one from the html,body section 
+
+        I don't want to have to type out all the type sizes all the time, i'd rather have it to be a proportion of something else. Use em. (base font size of the document)
+
+        Border: i can change thickness, style (dashed, etc), colour
+
+        Width: 60% of what? it's 60% of the closest parent of a width set... in this case it's body. the 40% is just filled with margin because this is a block element and nothing can go beside it
+
+        Margin: 
+        -->
+        
+	</head>
+	<body>
+	<img src="http://bitmakerlabs.github.io/html-css-workshop/images/bttf.jpg"> <!-- if in the same folder "bttf.jpg" this is a relative path, which is relative to the file we're in-->
+		<article class="post"> <!-- changes heirarchy of document only, HTML5, non-HTML5 -- use div. We're trying ot use the most specific tag possible, it acts as a div -->
+			<h1>McFly Family Values</h1> <!-- CSS Syntax: name of proprety, colon, value, semicolon, you never want to use inline-->
+			<p>Mina Mikhail</p> <p align="right">Saturday, January 8, 2005</p>
+			
+			<p>
+				Anybody who knows me at all knows that my favorite movie of all time is <a href="http://www.imdb.com/title/tt0088763/" target="_blank">Back to the Future &copy;</a>. I’ve seen it &nbsp; <!--an non-breaking-space something it would always render properly. there are more character entities available --> literally hundreds of times and it never ceases to entertain. Beyond its entertainment value lies something more, something that the pedestrian Back to the Future watcher might not pick up on. It’s not the fact that the movie is brilliantly directed, cast (Crispin Glover and Thomas F. Wilson were the only possible choices for George and Biff, respectively) and acted, that the subject matter is, on the surface, one of those ethereal ideas that every man, woman and child muses about at some point in their life, or that in Marty McFly we find a protagonist who, by being both the average seventeen-year-old and at the same time the coolest kid in Hill Valley, is so infinitely relatable, that truly makes this a great movie. No, there is a subtext to Back to the Future that goes beyond all these things and speaks directly to the audience in the language of their lives. The first fifteen minutes of the movie are so carefully constructed it would be hard to imagine telling the story any other way. In that crucial fifteen minutes we go from title credits, which themselves contain a plethora of information that becomes important in the film, to Marty travelling back to 1955. Each piece of dialog in this sequence is not only relevant to the rest of the movie but to the rest of the trilogy. In this fifteen minute span we are presented with everything we need to know about Marty McFly, the people that impact his life and Hill Valley in general.
+			</p>
+
+			<h2>Space &amp; Time</h2> <!-- ampersands is a special character; it is best escaped with a character entity-->
+
+			<p>
+				One of the most crucial plot structures of the story is the depiction of the McFly’s as the typical dysfunctional family. Anyone who has seen the movie knows that the entire plot rests on this idea but looking deeper you can find that there’s more than meets the eye. Before Marty travels through time we’re introduced to his parents, George and Lorraine. We first see George in a confrontation with his supervisor and childhood bully Biff Tannen followed by the whole family at dinner in their dimly lit, early-eighties-styled kitchen/dining room. George is distant as he watches The Honeymooners while Lorraine lectures her kids about dating etiquette. During this sequence there’s a moment that reveals the deeper subtext to the movie.
+			</p>
+
+			<p>
+				George and Lorraine met when Lorraine’s father hit George with the car. It is quickly established that the meeting of George and Lorraine and their falling in love is a story that is rehashed quite often during family gatherings. A discussion on this topic leads their daughter to question why George was in the middle of the street in the first place, setting up a subtle but masterful cinematic moment. Pouring another glass of vodka, Lorraine asks George if bird-watching was the reason he was in the street that day. George, distracted by the reports he’s writing for Biff but also clearly having heard the question, feigns as though he hadn’t and the conversation moves along with Lorraine sipping on her vodka.
+			</p>
+
+		</article>
+
+	</body>
+</html>
