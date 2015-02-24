@@ -1,0 +1,67 @@
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Merriweather', "Times New Roman", serif;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+section {
+    width:90%;
+    margin:auto;
+}
+
+h1 {
+    margin:0px;
+    text-align:center;
+}
+
+ul {
+    display:block;
+}
+
+.smaller {
+    font-size: 0.75em;
+    font-style:italic;
+    margin:0px;
+    text-align:center;
+}
+
+.entry-meta{
+    overflow: auto;
+}
+
+.entry-employer {
+    display:block;
+}
+
+.entry-date {
+    display: block;
+    float: right;
+}
+
+.entry-position{
+    display:block;
+    float: left;
+}
+
+.entry-content{
+    display:block;
+      font-family: 'Source Sans Pro', sans-serif;
+}
+
+#email {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+    font-family: helvetica, arial, sans-serif;
+    font-style:italic;
+    font-size: 0.75em;
+}
+
+#minilinks {
+    font-size:0.75em;
+    text-align: center;
+}
